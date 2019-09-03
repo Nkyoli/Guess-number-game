@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Number Game</title>
+
+        <!-- Meta tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" type="text/css" href="../vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+    </head>
+    
+    <body>
+        <div class="guess animated fadeInLeft">
+            <h1>Guess</h1>
+            <ul class="guesses">
+                <li class="js-1">&nbsp;</li>
+                <li class="js-2">&nbsp;</li>
+                <li class="js-3">&nbsp;</li>
+                <li class="js-4">&nbsp;</li>
+                <li class="js-5">&nbsp;</li>
+            </ul>
+            <ul class="guesses1 js-guesses1">
+                <li class="js-6">&nbsp;</li>
+                <li class="js-7">&nbsp;</li>
+                <li class="js-8">&nbsp;</li>
+                <li class="js-9">&nbsp;</li>
+                <li class="js-10">&nbsp;</li>
+            </ul>
+            <ul class="guesses2 js-guesses2">
+                <li class="js-11">&nbsp;</li>
+                <li class="js-12">&nbsp;</li>
+                <li class="js-13">&nbsp;</li>
+                <li class="js-14">&nbsp;</li>
+                <li class="js-15">&nbsp;</li>
+            </ul>
+            <ul class="guesses3 js-guesses3">
+                <li class="js-16">&nbsp;</li>
+                <li class="js-17">&nbsp;</li>
+                <li class="js-18">&nbsp;</li>
+                <li class="js-19">&nbsp;</li>
+                <li class="js-20">&nbsp;</li>
+            </ul>
+        </div>
+        <div class="number animated fadeInDown">
+            <h1>Number</h1>
+            <div class="play js-play animated zoomIn">
+                <p>🤔 <br> Do you want to start a new game?</p>
+                <button class="btnNo js-btnNo">NO</button>
+                <button class="btnYes js-btnYes">YES</button>
+            </div>
+            <div class="setting js-setting">
+                <h2>Settings</h2>
+                <hr>
+                <div class="highestVal">
+                    <label for="highestValue">Highest Value</label><input type="range" id="highestValue" min="50" max="200" value="100" step="50" oninput="highestValueVal.value = highestValue.value">
+                    <output id="highestValueVal" class="js-highestValueVal">100</output>
+                </div>
+                <div class="maxGuesses">
+                    <label for="maxGuesses">Max Guesses</label><input type="range" id="maxGuesses" min="5" max="20" value="5" step="5" oninput="maxGuessesVal.value = maxGuesses.value">
+                    <output id="maxGuessesVal" class="js-maxGuessesVal">5</output>
+                </div>
+                <button class="btnCancel js-btnCancel">CANCEL</button>
+                <button class="btnSave js-btnSave">SAVE</button>
+            </div>
+            <input type="text" placeholder="00" maxlength="3" autofocus class="js-guessInput">
+            <button class="btnGo js-btnGo">Go</button>
+            <ion-icon class="js-btnPlay" name="play-circle"></ion-icon>
+            <ion-icon class="js-btnSetting" name="settings"></ion-icon>
+            
+        </div>
+        <div class="game animated fadeInRight">
+            <h1>Game</h1>
+            <p class="js-message">Message</p>
+        </div>
+        <div class="footer animated fadeInLeft">
+            <div class="socialLogo">
+                <a href="https://github.com/Nkyoli"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+            <i>2019 &copy; Lionel Youmbi</i>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../resources/js/script.js"></script>
+    </body>
+    
+</html>
