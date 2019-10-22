@@ -2,7 +2,7 @@
 Player have to guess a number randomly generated, and the player has helpful messages base on older guesses.
 
 <<<<<<< HEAD
-##Created with: HTML5/CSS3/JQuery
+##Created with: HTML5/CSS3/JavaScript
 
 ##User Interface: 
 ![GitHub Logo](/img/ui.png)
@@ -10,6 +10,8 @@ Player have to guess a number randomly generated, and the player has helpful mes
 ##Settings: Player can set the maximum number of guesses and the highest number that can be guessed.
 ![GitHub Logo](/img/settings.png)
 
+##New Game: Starting a new game.
+![GitHub Logo](/img/newGame.png)
 =======
 ## Created with:
 HTML5/CSS3/JQuery

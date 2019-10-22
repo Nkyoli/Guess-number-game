@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Number Game</title>
+
+        <!-- Meta tags  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Links -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    
+    <body>
+        <div class="guess animated fadeInLeft">
+            <h1>Guess</h1>
+            <ul class="guesses">
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+
+        <div class="number animated fadeInDown">
+            <h1>Number</h1>
+            <div class="play animated zoomOut">
+                <p>🤔 <br> Do you want to start a new game?</p>
+                <button class="btnNo">NO</button>
+                <button class="btnYes">YES</button>
+            </div>
+            <div class="setting animated zoomOut">
+                <h2>Settings</h2>
+                <hr>
+                <div class="highestVal">
+                    <label for="highestValue">Highest Value</label><input type="range" id="highestValue" min="100" max="500" value="100" step="100" oninput="highestValueVal.value = highestValue.value">
+                    <output id="highestValueVal">100</output>
+                </div>
+                <div class="lowestVal">
+                    <label for="lowestValue">Lowest Value</label><input type="range" id="lowestValue" min="0" max="100" value="0" step="10" oninput="lowestValueVal.value = lowestValue.value">
+                    <output id="lowestValueVal">0</output>
+                </div>
+                <div class="maxGuesses">
+                    <label for="maxGuesses">Max Guesses</label><input type="range" id="maxGuesses" min="5" max="20" value="5" step="5" oninput="maxGuessesVal.value = maxGuesses.value">
+                    <output id="maxGuessesVal">5</output>
+                </div>
+                <button class="btnCancel">CANCEL</button>
+                <button class="btnSave">SAVE</button>
+            </div>
+            <input id="currentInput" type="text" placeholder="00" maxlength="3" autofocus>
+            <button class="btnGo">Go</button>
+            <ion-icon name="play-circle" id="btnPlay"></ion-icon>
+            <ion-icon name="settings" id="btnSetting"></ion-icon>
+            
+        </div>
+        <div class="game animated fadeInRight">
+            <h1>Game</h1>
+            <p id="currentMessage">Message</p>
+        </div>
+        <div class="footer animated fadeInLeft">
+            <div class="socialLogo">
+                <a href="https://github.com/Nkyoli"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+            <i>2019 &copy; Lionel Youmbi</i>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
