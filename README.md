@@ -1,5 +1,5 @@
 # Guess-number-game
-Player have to guess a number randomly generated, and the player has helpful messages base on older guesses.
+Player have to guess a number randomly generated, and the player has helpful messages base on previous guesses.
 
 ## Created with: HTML5/CSS3/JavaScript
 
